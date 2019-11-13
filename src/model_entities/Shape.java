@@ -1,24 +1,11 @@
 package model_entities;
 
-import model_enums.Color;
+//TROCANDO DE ABSTRATO PRA INTERFACE 
+public interface  Shape {
 
-public abstract class  Shape {
-
-	private Color color;
-
-	public Color getColor() {
-		return color;
-	}
-
-	public void setColor(Color color) {
-		this.color = color;
-	}
-
-	public Shape(Color color) {
-		
-		this.color = color;
-	}
-	public abstract double area();
+	//somente definicao do metodo area
+	//todo obejeto q for fira tem q implementar o area
+	 double area();
 	
 	
 }
